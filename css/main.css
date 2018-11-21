@@ -18,32 +18,42 @@ html {
 
 img {
   display: inline-block;
-  max-width: 100%;
-  width: auto;
+  width: 100%;
 }
 
 @media only screen and (min-width: 25em) {
-  img:nth-child(4),
-  img:nth-child(3) {
-    display: none;
+
+img{
+  width: 49%;
 }
+
+  img:nth-child(4),
+  img:nth-child(2) {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
-  img:nth-child(4),
-  img:nth-child(3) {
-    display: inline-block;
+
+  img{
+    width: 32%;
   }
+
+  img:nth-child(1) {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
-  img:nth-child(4) {
-    display: none;
-  }
-}
 
-@media only screen and (min-width: 90em) {
-  img:nth-child(4) {
+  img{
+    width: 24%
+  }
+
+  img:nth-child(1) {
     display: inline-block;
   }
+
 }
